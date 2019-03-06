@@ -1,10 +1,11 @@
 .panel {
   height: 100vh;
   margin-bottom: 400px;
+  text-align: center;
 }
 
 .blue {
-  background: blue;
+  text-align: center;
 }
 
 .green {
@@ -13,4 +14,16 @@
 
 .purple {
   background: purple;
+}
+
+.charFrame {
+  text-align: center;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 15%;
+}
+
+#fiveCharsName {
+  font-size: 10px;
+  display: flex;
 }

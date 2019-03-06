@@ -30,9 +30,7 @@ app.get('/search-char', function (request, response) {
   
   marvel.characters.findAll()
     .then(r => {
-      
     response.send(r.data);
-  
     })
     .fail(console.error)
     .done();
