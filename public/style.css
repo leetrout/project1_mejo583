@@ -1,0 +1,16 @@
+.panel {
+  height: 100vh;
+  margin-bottom: 400px;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.purple {
+  background: purple;
+}
