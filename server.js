@@ -13,10 +13,6 @@ var marvel = api.createClient({
   privateKey: process.env.PRIVATE_KEY
 });
 
-// marvel.characters.findAll()
-//   .then(console.log)
-//   .fail(console.error)
-//   .done();
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -28,12 +24,24 @@ app.get('/search-char', function (request, response) {
   
   let data;
   
-  marvel.characters.findAll()
+  marvel.characters.findAll(5, 80)
     .then(r => {
     response.send(r.data);
     })
     .fail(console.error)
     .done();
+});
+
+app.get('/search-comic', function (request, response) {
+  
+  let data;
+  
+  marvel.characters.comics('1010787')
+  .then(r => {
+  response.send(r.data);
+  })
+  .fail(console.error)
+  .done();
 });
 
 // http://expressjs.com/en/starter/basic-routing.html

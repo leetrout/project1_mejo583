@@ -4,15 +4,17 @@
   text-align: center;
 }
 
-.blue {
+.first {
+  padding: 50px;
+  background: linear-gradient(to bottom right, #E01414, yellow);;
   text-align: center;
 }
 
-.green {
+.second {
   background: green;
 }
 
-.purple {
+.third {
   background: purple;
 }
 
@@ -23,7 +25,25 @@
   width: 15%;
 }
 
+.comicFrame {
+  text-align: center;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 15%;
+}
+
 #fiveCharsName {
   font-size: 10px;
   display: flex;
+}
+
+#fiveComicName {
+  font-size: 10px;
+  display: flex;
+}
+
+.changeSize {
+  max-width: 1000px;
+  height: 100px;
+  margin: 0 auto;
 }

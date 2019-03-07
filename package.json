@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "marvel-api": "^1.1.0"
+    "marvel-api": "^1.1.0",
+    "chart.js": "^2.7.3"
   },
   "engines": {
     "node": "8.x"
